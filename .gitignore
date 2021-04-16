@@ -33,7 +33,7 @@ disassemblies/
 *.launch
 
 # doxygen output
-documentation/
+doxyOutput/
 
 #kicad temporaries
 *.kicad_pcb-bak
