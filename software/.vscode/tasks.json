@@ -1,0 +1,22 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build Power Control proto 000",
+            "type": "shell",
+            "command": "make PROJECT=powercontrolProto000 -j20",
+            "group": "build",
+            "problemMatcher": "$gcc"
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "make  PROJECT=powercontrolProto000 clean",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}

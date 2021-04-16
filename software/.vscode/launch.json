@@ -1,0 +1,69 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "run Power Control proto 000",
+            "type": "cppdbg",
+            "request": "launch",
+            // "targetArchitecture": "x86_64",
+            "program": "${workspaceFolder}/bin/powercontrolProto000/debug/powercontrolProto000.elf",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "build Power Control proto 000",
+            "miDebuggerPath": "/home/abilos/programs/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "set print pretty on",
+                },
+                {
+                    "description": "setup architecture",
+                    "text": "set architecture armv6"
+                },
+                {
+                    "description": "Load the file",
+                    "text": "file ${workspaceFolder}/bin/powercontrolProto000/debug/powercontrolProto000.elf"
+                },
+                {
+                    "description": "Connect to black magic probe",
+                    "text": "target extended-remote /dev/ttyACM0"
+                },
+                {
+                    "description": "scan SWD bus",
+                    "text": "monitor swdp_scan"
+                },
+                {
+                    "description": "attach to controller",
+                    "text": "attach 1"
+                },
+                {
+                    "description": "enable access to inaccessible memory",
+                    "text": "set mem inaccessible-by-default off"
+                },
+                {
+                    "description": "remap interrupt vectors to flash",
+                    "text": "set {int}0x40048000 = 2"
+                },
+                {
+                    "description": "program the elf file",
+                    "text": "load ${workspaceFolder}/bin/powercontrolProto000/debug/powercontrolProto000.elf"
+                },
+                {
+                    "description": "remap interrupt vectors to flash, again",
+                    "text": "set {int}0x40048000 = 2"
+                },
+                {
+                    "description": "check if everything went okay",
+                    "text": "compare-sections"
+                },
+            ],
+        },
+    ]
+}
