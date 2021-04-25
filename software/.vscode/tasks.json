@@ -7,7 +7,10 @@
             "label": "build Power Control proto 000",
             "type": "shell",
             "command": "make PROJECT=powercontrolProto000 -j20",
-            "group": "build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
             "problemMatcher": "$gcc"
         },
         {
