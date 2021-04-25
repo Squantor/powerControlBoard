@@ -17,7 +17,6 @@ extern "C"
 {
     void SysTick_Handler(void)
     {
-        GpioSetPinToggle(LPC_GPIO_PORT, 0, PIN_LED);
         __NOP();
     }
 }

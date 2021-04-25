@@ -35,10 +35,10 @@ SOFTWARE.
 #define IOCON_XTAL_IN       IOCON_PIO8
 #define IOCON_XTAL_OUT      IOCON_PIO9
 
-#define IOCON_LED           IOCON_PIO23
-#define PIN_LED             (23u)
-
 #define TICKS_PER_S         4
+
+// debug UART
+
 
 void boardInit(void);
 
