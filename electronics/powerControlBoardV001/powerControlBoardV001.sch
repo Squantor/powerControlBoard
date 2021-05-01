@@ -59,7 +59,7 @@ F 3 "~" H 900 1050 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Label 1150 950  0    50   ~ 0
-Line
+Line_in
 $Comp
 L power:Earth #PWR0101
 U 1 1 608C35AD
@@ -160,4 +160,43 @@ Wire Notes Line
 	2200 7700 1500 7700
 Wire Notes Line
 	1500 7550 2200 7550
+$Sheet
+S 1750 700  900  750 
+U 608D141D
+F0 "grid filtering" 50
+F1 "grid_filter.sch" 50
+$EndSheet
+Text HLabel 1750 950  2    50   Input ~ 0
+Line_in
+Text HLabel 1750 1050 2    50   Input ~ 0
+Earth
+Text HLabel 1750 1150 2    50   Input ~ 0
+Neutral
+Text HLabel 2650 950  0    50   Output ~ 0
+Line_out
+Text Label 1700 950  2    50   ~ 0
+Line_in
+$Comp
+L power:Earth #PWR?
+U 1 1 608D1F86
+P 1700 1050
+F 0 "#PWR?" H 1700 800 50  0001 C CNN
+F 1 "Earth" H 1700 900 50  0001 C CNN
+F 2 "" H 1700 1050 50  0001 C CNN
+F 3 "~" H 1700 1050 50  0001 C CNN
+	1    1700 1050
+	0    1    1    0   
+$EndComp
+Text Label 1700 1150 2    50   ~ 0
+Neutral
+Wire Wire Line
+	1700 1150 1750 1150
+Wire Wire Line
+	1750 1050 1700 1050
+Wire Wire Line
+	1700 950  1750 950 
+Text Label 2700 950  0    50   ~ 0
+Line_out
+Wire Wire Line
+	2700 950  2650 950 
 $EndSCHEMATC
