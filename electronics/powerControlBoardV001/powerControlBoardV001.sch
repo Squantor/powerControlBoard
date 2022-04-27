@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 12
 Title ""
 Date ""
 Rev ""
@@ -157,15 +157,15 @@ Wire Notes Line
 Wire Notes Line
 	1500 7550 2200 7550
 $Sheet
-S 1900 1800 850  800 
+S 1900 3800 850  800 
 U 62698700
 F0 "Sheet626986FF" 50
 F1 "LV_input.sch" 50
-F2 "L_in" I L 1900 1950 50 
-F3 "Earth" I L 1900 2050 50 
-F4 "N_in" I L 1900 2150 50 
-F5 "VDD" O R 2750 1950 50 
-F6 "VSS" O R 2750 2150 50 
+F2 "L_in" I L 1900 3950 50 
+F3 "Earth" I L 1900 4050 50 
+F4 "N_in" I L 1900 4150 50 
+F5 "VDD" O R 2750 3950 50 
+F6 "VSS" O R 2750 4150 50 
 $EndSheet
 $Sheet
 S 1900 2800 850  800 
@@ -190,16 +190,16 @@ F5 "N_out" O R 2750 1150 50
 F6 "Earth" I L 1900 1050 50 
 $EndSheet
 $Sheet
-S 1900 3800 850  800 
+S 1900 1800 850  800 
 U 6269B018
 F0 "Sheet6269B017" 50
 F1 "zero_cross_detector.sch" 50
-F2 "L_in" I L 1900 3950 50 
-F3 "Earth" I L 1900 4050 50 
-F4 "N_in" I L 1900 4150 50 
-F5 "VDD" I R 2750 3950 50 
-F6 "VSS" I R 2750 4150 50 
-F7 "Detector" O R 2750 4050 50 
+F2 "L_in" I L 1900 1950 50 
+F3 "Earth" I L 1900 2050 50 
+F4 "N_in" I L 1900 2150 50 
+F5 "VDD" I R 2750 1950 50 
+F6 "VSS" I R 2750 2150 50 
+F7 "Detector" O R 2750 2050 50 
 $EndSheet
 Text Label 2800 950  0    50   ~ 0
 L_bus
@@ -249,22 +249,10 @@ F 3 "~" H 1850 2050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1850 2050 1900 2050
-Text Label 2800 1950 0    50   ~ 0
-VDD
-Text Label 2800 2150 0    50   ~ 0
-VSS
-Wire Wire Line
-	2800 1950 2750 1950
-Wire Wire Line
-	2750 2150 2800 2150
 Text Label 2800 2950 0    50   ~ 0
 VDD
 Text Label 2800 3150 0    50   ~ 0
 VSS
-Wire Wire Line
-	2800 2950 2750 2950
-Wire Wire Line
-	2800 3150 2750 3150
 Wire Wire Line
 	1900 2950 1700 2950
 Wire Wire Line
@@ -311,27 +299,27 @@ F 3 "~" H 1850 4050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1850 4050 1900 4050
-Text Label 2800 4150 0    50   ~ 0
+Text Label 2800 2150 0    50   ~ 0
 VSS
 Wire Wire Line
-	2800 4150 2750 4150
-Text Label 2800 4050 0    50   ~ 0
+	2800 2150 2750 2150
+Text Label 2800 2050 0    50   ~ 0
 ZC_in
 Wire Wire Line
-	2800 4050 2750 4050
+	2800 2050 2750 2050
 $Comp
 L power:+3.3V #PWR?
 U 1 1 626B4B0C
-P 2800 3950
-F 0 "#PWR?" H 2800 3800 50  0001 C CNN
-F 1 "+3.3V" V 2815 4078 50  0000 L CNN
-F 2 "" H 2800 3950 50  0001 C CNN
-F 3 "" H 2800 3950 50  0001 C CNN
-	1    2800 3950
+P 2800 1950
+F 0 "#PWR?" H 2800 1800 50  0001 C CNN
+F 1 "+3.3V" V 2815 2078 50  0000 L CNN
+F 2 "" H 2800 1950 50  0001 C CNN
+F 3 "" H 2800 1950 50  0001 C CNN
+	1    2800 1950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2800 3950 2750 3950
+	2800 1950 2750 1950
 $Sheet
 S 3700 800  850  800 
 U 626B7E45
@@ -556,4 +544,101 @@ Wire Wire Line
 	6450 2150 6400 2150
 Wire Wire Line
 	6400 1950 6450 1950
+$Sheet
+S 3700 2800 850  800 
+U 626F4AD7
+F0 "Sheet626F4AD6" 50
+F1 "step_down.sch" 50
+F2 "VDD_in" I L 3700 2950 50 
+F3 "VSS_in" I L 3700 3150 50 
+F4 "VDD_out" O R 4550 2950 50 
+F5 "VSS_out" O R 4550 3150 50 
+$EndSheet
+$Sheet
+S 3700 3800 850  800 
+U 626F5A0D
+F0 "sheet626F5A0D" 50
+F1 "step_down.sch" 50
+F2 "VDD_in" I L 3700 3950 50 
+F3 "VSS_in" I L 3700 4150 50 
+F4 "VDD_out" O R 4550 3950 50 
+F5 "VSS_out" O R 4550 4150 50 
+$EndSheet
+Wire Wire Line
+	2750 3150 3200 3150
+Wire Wire Line
+	2750 2950 3300 2950
+Wire Wire Line
+	3300 2950 3300 3950
+Wire Wire Line
+	3300 3950 3700 3950
+Connection ~ 3300 2950
+Wire Wire Line
+	3300 2950 3700 2950
+Wire Wire Line
+	3200 3150 3200 4150
+Wire Wire Line
+	3200 4150 3700 4150
+Connection ~ 3200 3150
+Wire Wire Line
+	3200 3150 3700 3150
+Wire Wire Line
+	2750 3950 3300 3950
+Connection ~ 3300 3950
+Wire Wire Line
+	2750 4150 3200 4150
+Connection ~ 3200 4150
+Text Label 4600 3150 0    50   ~ 0
+VSS
+Text Label 4600 4150 0    50   ~ 0
+VSS
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6270A466
+P 4600 2950
+F 0 "#PWR?" H 4600 2800 50  0001 C CNN
+F 1 "+3.3V" V 4615 3078 50  0000 L CNN
+F 2 "" H 4600 2950 50  0001 C CNN
+F 3 "" H 4600 2950 50  0001 C CNN
+	1    4600 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 2950 4550 2950
+$Sheet
+S 3700 4800 850  800 
+U 6270D99F
+F0 "Sheet6270D99E" 50
+F1 "fan_control.sch" 50
+F2 "VDD_in" I L 3700 4950 50 
+F3 "VSS_in" I L 3700 5150 50 
+F4 "PWM_in" I R 4550 5250 50 
+F5 "Tacho_out" O R 4550 5350 50 
+F6 "VDD_Tacho" I R 4550 4950 50 
+$EndSheet
+Wire Wire Line
+	3300 3950 3300 4950
+Wire Wire Line
+	3300 4950 3700 4950
+Wire Wire Line
+	3200 4150 3200 5150
+Wire Wire Line
+	3200 5150 3700 5150
+Wire Wire Line
+	4600 4150 4550 4150
+Wire Wire Line
+	4600 3150 4550 3150
+$Comp
+L power:+3.3V #PWR?
+U 1 1 62717D81
+P 4600 4950
+F 0 "#PWR?" H 4600 4800 50  0001 C CNN
+F 1 "+3.3V" V 4615 5078 50  0000 L CNN
+F 2 "" H 4600 4950 50  0001 C CNN
+F 3 "" H 4600 4950 50  0001 C CNN
+	1    4600 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 4950 4550 4950
 $EndSCHEMATC
