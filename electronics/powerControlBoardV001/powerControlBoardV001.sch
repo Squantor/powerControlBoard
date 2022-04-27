@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -18,7 +18,7 @@ L SquantorLabels:VYYYYMMDD N1
 U 1 1 5EE12BF3
 P 1050 7450
 F 0 "N1" H 1000 7550 60  0000 L CNN
-F 1 "20210430" H 800 7450 60  0000 L CNN
+F 1 "20220427" H 800 7450 60  0000 L CNN
 F 2 "SquantorLabels:Label_Generic" H 1050 7450 60  0001 C CNN
 F 3 "" H 1050 7450 60  0001 C CNN
 	1    1050 7450
@@ -74,11 +74,7 @@ $EndComp
 Text Label 1150 1150 0    50   ~ 0
 N_in
 Wire Wire Line
-	1150 1150 1100 1150
-Wire Wire Line
 	1100 1050 1150 1050
-Wire Wire Line
-	1150 950  1100 950 
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 608C4817
@@ -177,5 +173,41 @@ S 1900 800  850  800
 U 62699DAE
 F0 "Sheet62699DAD" 50
 F1 "safety_relay.sch" 50
+F2 "L_in" I L 1900 950 50 
+F3 "N_in" I L 1900 1150 50 
+F4 "L_out" O R 2750 950 50 
+F5 "N_out" O R 2750 1150 50 
+F6 "Earth" I L 1900 1050 50 
 $EndSheet
+$Sheet
+S 1900 3800 850  800 
+U 6269B018
+F0 "Sheet6269B017" 50
+F1 "zero_cross_detector.sch" 50
+$EndSheet
+Text Label 2800 950  0    50   ~ 0
+L_bus
+Text Label 2800 1150 0    50   ~ 0
+N_bus
+Wire Wire Line
+	2800 950  2750 950 
+Wire Wire Line
+	2800 1150 2750 1150
+Wire Wire Line
+	1100 950  1900 950 
+Wire Wire Line
+	1100 1150 1900 1150
+$Comp
+L power:Earth #PWR?
+U 1 1 6269C2DE
+P 1850 1050
+F 0 "#PWR?" H 1850 800 50  0001 C CNN
+F 1 "Earth" H 1850 900 50  0001 C CNN
+F 2 "" H 1850 1050 50  0001 C CNN
+F 3 "~" H 1850 1050 50  0001 C CNN
+	1    1850 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 1050 1900 1050
 $EndSCHEMATC
