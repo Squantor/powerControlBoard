@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -194,15 +194,17 @@ S 1900 3800 850  800
 U 6269B018
 F0 "Sheet6269B017" 50
 F1 "zero_cross_detector.sch" 50
+F2 "L_in" I L 1900 3950 50 
+F3 "Earth" I L 1900 4050 50 
+F4 "N_in" I L 1900 4150 50 
+F5 "VDD" I R 2750 3950 50 
+F6 "VSS" I R 2750 4150 50 
+F7 "Detector" O R 2750 4050 50 
 $EndSheet
 Text Label 2800 950  0    50   ~ 0
 L_bus
 Text Label 2800 1150 0    50   ~ 0
 N_bus
-Wire Wire Line
-	2800 950  2750 950 
-Wire Wire Line
-	2800 1150 2750 1150
 Wire Wire Line
 	1100 950  1700 950 
 Wire Wire Line
@@ -286,4 +288,272 @@ F 3 "~" H 1850 3050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1850 3050 1900 3050
+Wire Wire Line
+	1700 2950 1700 3950
+Wire Wire Line
+	1700 3950 1900 3950
+Connection ~ 1700 2950
+Wire Wire Line
+	1600 3150 1600 4150
+Wire Wire Line
+	1600 4150 1900 4150
+Connection ~ 1600 3150
+$Comp
+L power:Earth #PWR?
+U 1 1 626B27F3
+P 1850 4050
+F 0 "#PWR?" H 1850 3800 50  0001 C CNN
+F 1 "Earth" H 1850 3900 50  0001 C CNN
+F 2 "" H 1850 4050 50  0001 C CNN
+F 3 "~" H 1850 4050 50  0001 C CNN
+	1    1850 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 4050 1900 4050
+Text Label 2800 4150 0    50   ~ 0
+VSS
+Wire Wire Line
+	2800 4150 2750 4150
+Text Label 2800 4050 0    50   ~ 0
+ZC_in
+Wire Wire Line
+	2800 4050 2750 4050
+$Comp
+L power:+3.3V #PWR?
+U 1 1 626B4B0C
+P 2800 3950
+F 0 "#PWR?" H 2800 3800 50  0001 C CNN
+F 1 "+3.3V" V 2815 4078 50  0000 L CNN
+F 2 "" H 2800 3950 50  0001 C CNN
+F 3 "" H 2800 3950 50  0001 C CNN
+	1    2800 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 3950 2750 3950
+$Sheet
+S 3700 800  850  800 
+U 626B7E45
+F0 "Sheet626B7E44" 50
+F1 "SSR.sch" 50
+F2 "L_in" I L 3700 950 50 
+F3 "Earth" I L 3700 1050 50 
+F4 "N_in" I L 3700 1150 50 
+F5 "L_out" O R 4550 950 50 
+F6 "N_out" O R 4550 1150 50 
+$EndSheet
+Wire Wire Line
+	2750 950  3500 950 
+Wire Wire Line
+	2750 1150 3400 1150
+$Comp
+L power:Earth #PWR?
+U 1 1 626B9FBC
+P 3650 1050
+F 0 "#PWR?" H 3650 800 50  0001 C CNN
+F 1 "Earth" H 3650 900 50  0001 C CNN
+F 2 "" H 3650 1050 50  0001 C CNN
+F 3 "~" H 3650 1050 50  0001 C CNN
+	1    3650 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 1050 3700 1050
+Text Label 4600 950  0    50   ~ 0
+L_out1
+Text Label 4600 1150 0    50   ~ 0
+N_out1
+$Sheet
+S 5550 800  850  800 
+U 626BBE1D
+F0 "sheet626BBE1D" 50
+F1 "zero_cross_detector.sch" 50
+F2 "L_in" I L 5550 950 50 
+F3 "Earth" I L 5550 1050 50 
+F4 "N_in" I L 5550 1150 50 
+F5 "VDD" I R 6400 950 50 
+F6 "VSS" I R 6400 1150 50 
+F7 "Detector" O R 6400 1050 50 
+$EndSheet
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 626BE5C6
+P 5200 1350
+F 0 "J?" H 5150 1450 50  0000 L CNN
+F 1 "Conn_01x02" H 4950 1150 50  0000 L CNN
+F 2 "SquantorPhoenixContact:MKDS_2conn_508pitch_1711725" H 5200 1350 50  0001 C CNN
+F 3 "~" H 5200 1350 50  0001 C CNN
+	1    5200 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 950  4950 950 
+Wire Wire Line
+	4550 1150 4900 1150
+Wire Wire Line
+	5000 1350 4950 1350
+Wire Wire Line
+	4950 1350 4950 950 
+Connection ~ 4950 950 
+Wire Wire Line
+	4950 950  5550 950 
+Wire Wire Line
+	4900 1150 4900 1450
+Wire Wire Line
+	4900 1450 5000 1450
+Connection ~ 4900 1150
+Wire Wire Line
+	4900 1150 5550 1150
+$Comp
+L power:Earth #PWR?
+U 1 1 626C16CB
+P 5500 1050
+F 0 "#PWR?" H 5500 800 50  0001 C CNN
+F 1 "Earth" H 5500 900 50  0001 C CNN
+F 2 "" H 5500 1050 50  0001 C CNN
+F 3 "~" H 5500 1050 50  0001 C CNN
+	1    5500 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 1050 5550 1050
+$Comp
+L power:+3.3V #PWR?
+U 1 1 626C4524
+P 6450 950
+F 0 "#PWR?" H 6450 800 50  0001 C CNN
+F 1 "+3.3V" V 6465 1078 50  0000 L CNN
+F 2 "" H 6450 950 50  0001 C CNN
+F 3 "" H 6450 950 50  0001 C CNN
+	1    6450 950 
+	0    1    1    0   
+$EndComp
+Text Label 6450 1050 0    50   ~ 0
+ZC_out1
+Text Label 6450 1150 0    50   ~ 0
+VSS
+Wire Wire Line
+	6450 1150 6400 1150
+Wire Wire Line
+	6400 1050 6450 1050
+Wire Wire Line
+	6450 950  6400 950 
+$Sheet
+S 3700 1800 850  800 
+U 626C90B4
+F0 "sheet626C90B4" 50
+F1 "SSR.sch" 50
+F2 "L_in" I L 3700 1950 50 
+F3 "Earth" I L 3700 2050 50 
+F4 "N_in" I L 3700 2150 50 
+F5 "L_out" O R 4550 1950 50 
+F6 "N_out" O R 4550 2150 50 
+$EndSheet
+Text Label 4600 1950 0    50   ~ 0
+L_out2
+Text Label 4600 2150 0    50   ~ 0
+N_out2
+$Sheet
+S 5550 1800 850  800 
+U 626C91A8
+F0 "sheet626C91A8" 50
+F1 "zero_cross_detector.sch" 50
+F2 "L_in" I L 5550 1950 50 
+F3 "Earth" I L 5550 2050 50 
+F4 "N_in" I L 5550 2150 50 
+F5 "VDD" I R 6400 1950 50 
+F6 "VSS" I R 6400 2150 50 
+F7 "Detector" O R 6400 2050 50 
+$EndSheet
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 626C91AE
+P 5200 2350
+F 0 "J?" H 5150 2450 50  0000 L CNN
+F 1 "Conn_01x02" H 4950 2150 50  0000 L CNN
+F 2 "SquantorPhoenixContact:MKDS_2conn_508pitch_1711725" H 5200 2350 50  0001 C CNN
+F 3 "~" H 5200 2350 50  0001 C CNN
+	1    5200 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 1950 4950 1950
+Wire Wire Line
+	4550 2150 4900 2150
+Wire Wire Line
+	5000 2350 4950 2350
+Wire Wire Line
+	4950 2350 4950 1950
+Connection ~ 4950 1950
+Wire Wire Line
+	4950 1950 5550 1950
+Wire Wire Line
+	4900 2150 4900 2450
+Wire Wire Line
+	4900 2450 5000 2450
+Connection ~ 4900 2150
+Wire Wire Line
+	4900 2150 5550 2150
+$Comp
+L power:Earth #PWR?
+U 1 1 626C91C2
+P 5500 2050
+F 0 "#PWR?" H 5500 1800 50  0001 C CNN
+F 1 "Earth" H 5500 1900 50  0001 C CNN
+F 2 "" H 5500 2050 50  0001 C CNN
+F 3 "~" H 5500 2050 50  0001 C CNN
+	1    5500 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 2050 5550 2050
+Wire Wire Line
+	3700 1950 3500 1950
+Wire Wire Line
+	3500 1950 3500 950 
+Connection ~ 3500 950 
+Wire Wire Line
+	3500 950  3700 950 
+Wire Wire Line
+	3400 1150 3400 2150
+Wire Wire Line
+	3400 2150 3700 2150
+Connection ~ 3400 1150
+Wire Wire Line
+	3400 1150 3700 1150
+$Comp
+L power:Earth #PWR?
+U 1 1 626CF411
+P 3650 2050
+F 0 "#PWR?" H 3650 1800 50  0001 C CNN
+F 1 "Earth" H 3650 1900 50  0001 C CNN
+F 2 "" H 3650 2050 50  0001 C CNN
+F 3 "~" H 3650 2050 50  0001 C CNN
+	1    3650 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 2050 3700 2050
+$Comp
+L power:+3.3V #PWR?
+U 1 1 626D183B
+P 6450 1950
+F 0 "#PWR?" H 6450 1800 50  0001 C CNN
+F 1 "+3.3V" V 6465 2078 50  0000 L CNN
+F 2 "" H 6450 1950 50  0001 C CNN
+F 3 "" H 6450 1950 50  0001 C CNN
+	1    6450 1950
+	0    1    1    0   
+$EndComp
+Text Label 6450 2050 0    50   ~ 0
+ZC_out1
+Text Label 6450 2150 0    50   ~ 0
+VSS
+Wire Wire Line
+	6400 2050 6450 2050
+Wire Wire Line
+	6450 2150 6400 2150
+Wire Wire Line
+	6400 1950 6450 1950
 $EndSCHEMATC
