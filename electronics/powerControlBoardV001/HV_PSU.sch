@@ -36,10 +36,10 @@ Wire Wire Line
 Wire Wire Line
 	850  700  800  700 
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0116
 U 1 1 626A0849
 P 850 800
-F 0 "#PWR?" H 850 550 50  0001 C CNN
+F 0 "#PWR0116" H 850 550 50  0001 C CNN
 F 1 "Earth" H 850 650 50  0001 C CNN
 F 2 "" H 850 800 50  0001 C CNN
 F 3 "~" H 850 800 50  0001 C CNN

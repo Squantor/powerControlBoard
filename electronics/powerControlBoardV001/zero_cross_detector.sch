@@ -46,13 +46,13 @@ Wire Wire Line
 Wire Wire Line
 	1550 850  1600 850 
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0117
 U 1 1 626A4076
 P 850 750
-AR Path="/6269B018/626A4076" Ref="#PWR?"  Part="1" 
-AR Path="/626BBE1D/626A4076" Ref="#PWR?"  Part="1" 
-AR Path="/626C91A8/626A4076" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 850 500 50  0001 C CNN
+AR Path="/6269B018/626A4076" Ref="#PWR0117"  Part="1" 
+AR Path="/626BBE1D/626A4076" Ref="#PWR0118"  Part="1" 
+AR Path="/626C91A8/626A4076" Ref="#PWR0119"  Part="1" 
+F 0 "#PWR0117" H 850 500 50  0001 C CNN
 F 1 "Earth" H 850 600 50  0001 C CNN
 F 2 "" H 850 750 50  0001 C CNN
 F 3 "~" H 850 750 50  0001 C CNN
@@ -62,13 +62,13 @@ $EndComp
 Wire Wire Line
 	850  750  800  750 
 $Comp
-L Device:R R?
+L Device:R R1
 U 1 1 626A5B49
 P 1200 1350
-AR Path="/6269B018/626A5B49" Ref="R?"  Part="1" 
-AR Path="/626BBE1D/626A5B49" Ref="R?"  Part="1" 
-AR Path="/626C91A8/626A5B49" Ref="R?"  Part="1" 
-F 0 "R?" V 1100 1350 50  0000 C CNN
+AR Path="/6269B018/626A5B49" Ref="R1"  Part="1" 
+AR Path="/626BBE1D/626A5B49" Ref="R6"  Part="1" 
+AR Path="/626C91A8/626A5B49" Ref="R11"  Part="1" 
+F 0 "R1" V 1100 1350 50  0000 C CNN
 F 1 "100K" V 1200 1350 50  0000 C CNN
 F 2 "SquantorRcl:C_1206" V 1130 1350 50  0001 C CNN
 F 3 "~" H 1200 1350 50  0001 C CNN
@@ -76,13 +76,13 @@ F 3 "~" H 1200 1350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R3
 U 1 1 626A6281
 P 1550 1350
-AR Path="/6269B018/626A6281" Ref="R?"  Part="1" 
-AR Path="/626BBE1D/626A6281" Ref="R?"  Part="1" 
-AR Path="/626C91A8/626A6281" Ref="R?"  Part="1" 
-F 0 "R?" V 1450 1350 50  0000 C CNN
+AR Path="/6269B018/626A6281" Ref="R3"  Part="1" 
+AR Path="/626BBE1D/626A6281" Ref="R8"  Part="1" 
+AR Path="/626C91A8/626A6281" Ref="R13"  Part="1" 
+F 0 "R3" V 1450 1350 50  0000 C CNN
 F 1 "100K" V 1550 1350 50  0000 C CNN
 F 2 "SquantorRcl:C_1206" V 1480 1350 50  0001 C CNN
 F 3 "~" H 1550 1350 50  0001 C CNN
@@ -90,13 +90,13 @@ F 3 "~" H 1550 1350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R2
 U 1 1 626A6C1E
 P 1200 1750
-AR Path="/6269B018/626A6C1E" Ref="R?"  Part="1" 
-AR Path="/626BBE1D/626A6C1E" Ref="R?"  Part="1" 
-AR Path="/626C91A8/626A6C1E" Ref="R?"  Part="1" 
-F 0 "R?" V 1100 1750 50  0000 C CNN
+AR Path="/6269B018/626A6C1E" Ref="R2"  Part="1" 
+AR Path="/626BBE1D/626A6C1E" Ref="R7"  Part="1" 
+AR Path="/626C91A8/626A6C1E" Ref="R12"  Part="1" 
+F 0 "R2" V 1100 1750 50  0000 C CNN
 F 1 "100K" V 1200 1750 50  0000 C CNN
 F 2 "SquantorRcl:C_1206" V 1130 1750 50  0001 C CNN
 F 3 "~" H 1200 1750 50  0001 C CNN
@@ -104,13 +104,13 @@ F 3 "~" H 1200 1750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R4
 U 1 1 626A6C66
 P 1550 1750
-AR Path="/6269B018/626A6C66" Ref="R?"  Part="1" 
-AR Path="/626BBE1D/626A6C66" Ref="R?"  Part="1" 
-AR Path="/626C91A8/626A6C66" Ref="R?"  Part="1" 
-F 0 "R?" V 1450 1750 50  0000 C CNN
+AR Path="/6269B018/626A6C66" Ref="R4"  Part="1" 
+AR Path="/626BBE1D/626A6C66" Ref="R9"  Part="1" 
+AR Path="/626C91A8/626A6C66" Ref="R14"  Part="1" 
+F 0 "R4" V 1450 1750 50  0000 C CNN
 F 1 "100K" V 1550 1750 50  0000 C CNN
 F 2 "SquantorRcl:C_1206" V 1480 1750 50  0001 C CNN
 F 3 "~" H 1550 1750 50  0001 C CNN
@@ -118,15 +118,15 @@ F 3 "~" H 1550 1750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C1
 U 1 1 626A7E24
 P 1750 1550
-AR Path="/6269B018/626A7E24" Ref="C?"  Part="1" 
-AR Path="/626BBE1D/626A7E24" Ref="C?"  Part="1" 
-AR Path="/626C91A8/626A7E24" Ref="C?"  Part="1" 
-F 0 "C?" H 1750 1650 50  0000 L CNN
+AR Path="/6269B018/626A7E24" Ref="C1"  Part="1" 
+AR Path="/626BBE1D/626A7E24" Ref="C2"  Part="1" 
+AR Path="/626C91A8/626A7E24" Ref="C3"  Part="1" 
+F 0 "C1" H 1750 1650 50  0000 L CNN
 F 1 "10n" H 1750 1450 50  0000 L CNN
-F 2 "" H 1788 1400 50  0001 C CNN
+F 2 "SquantorRcl:C_0805" H 1788 1400 50  0001 C CNN
 F 3 "~" H 1750 1550 50  0001 C CNN
 	1    1750 1550
 	1    0    0    -1  
@@ -152,13 +152,13 @@ Wire Wire Line
 Wire Wire Line
 	1750 1750 1700 1750
 $Comp
-L Device:D D?
+L Device:D D1
 U 1 1 626A9706
 P 2150 1100
-AR Path="/6269B018/626A9706" Ref="D?"  Part="1" 
-AR Path="/626BBE1D/626A9706" Ref="D?"  Part="1" 
-AR Path="/626C91A8/626A9706" Ref="D?"  Part="1" 
-F 0 "D?" H 2050 1150 50  0000 C CNN
+AR Path="/6269B018/626A9706" Ref="D1"  Part="1" 
+AR Path="/626BBE1D/626A9706" Ref="D5"  Part="1" 
+AR Path="/626C91A8/626A9706" Ref="D9"  Part="1" 
+F 0 "D1" H 2050 1150 50  0000 C CNN
 F 1 "1N4148" H 2150 1000 50  0000 C CNN
 F 2 "Diode_SMD:D_MiniMELF" H 2150 1100 50  0001 C CNN
 F 3 "~" H 2150 1100 50  0001 C CNN
@@ -166,13 +166,13 @@ F 3 "~" H 2150 1100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:D D?
+L Device:D D2
 U 1 1 626AA9C6
 P 2150 1350
-AR Path="/6269B018/626AA9C6" Ref="D?"  Part="1" 
-AR Path="/626BBE1D/626AA9C6" Ref="D?"  Part="1" 
-AR Path="/626C91A8/626AA9C6" Ref="D?"  Part="1" 
-F 0 "D?" H 2050 1400 50  0000 C CNN
+AR Path="/6269B018/626AA9C6" Ref="D2"  Part="1" 
+AR Path="/626BBE1D/626AA9C6" Ref="D6"  Part="1" 
+AR Path="/626C91A8/626AA9C6" Ref="D10"  Part="1" 
+F 0 "D2" H 2050 1400 50  0000 C CNN
 F 1 "1N4148" H 2150 1250 50  0000 C CNN
 F 2 "Diode_SMD:D_MiniMELF" H 2150 1350 50  0001 C CNN
 F 3 "~" H 2150 1350 50  0001 C CNN
@@ -180,13 +180,13 @@ F 3 "~" H 2150 1350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:D D?
+L Device:D D3
 U 1 1 626AC51D
 P 2150 1750
-AR Path="/6269B018/626AC51D" Ref="D?"  Part="1" 
-AR Path="/626BBE1D/626AC51D" Ref="D?"  Part="1" 
-AR Path="/626C91A8/626AC51D" Ref="D?"  Part="1" 
-F 0 "D?" H 2250 1800 50  0000 C CNN
+AR Path="/6269B018/626AC51D" Ref="D3"  Part="1" 
+AR Path="/626BBE1D/626AC51D" Ref="D7"  Part="1" 
+AR Path="/626C91A8/626AC51D" Ref="D11"  Part="1" 
+F 0 "D3" H 2250 1800 50  0000 C CNN
 F 1 "1N4148" H 2150 1650 50  0000 C CNN
 F 2 "Diode_SMD:D_MiniMELF" H 2150 1750 50  0001 C CNN
 F 3 "~" H 2150 1750 50  0001 C CNN
@@ -194,13 +194,13 @@ F 3 "~" H 2150 1750 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:D D?
+L Device:D D4
 U 1 1 626ADECD
 P 2150 2000
-AR Path="/6269B018/626ADECD" Ref="D?"  Part="1" 
-AR Path="/626BBE1D/626ADECD" Ref="D?"  Part="1" 
-AR Path="/626C91A8/626ADECD" Ref="D?"  Part="1" 
-F 0 "D?" H 2250 2050 50  0000 C CNN
+AR Path="/6269B018/626ADECD" Ref="D4"  Part="1" 
+AR Path="/626BBE1D/626ADECD" Ref="D8"  Part="1" 
+AR Path="/626C91A8/626ADECD" Ref="D12"  Part="1" 
+F 0 "D4" H 2250 2050 50  0000 C CNN
 F 1 "1N4148" H 2150 1900 50  0000 C CNN
 F 2 "Diode_SMD:D_MiniMELF" H 2150 2000 50  0001 C CNN
 F 3 "~" H 2150 2000 50  0001 C CNN
@@ -228,13 +228,13 @@ Connection ~ 1950 1350
 Wire Wire Line
 	1950 1350 1750 1350
 $Comp
-L Device:R R?
+L Device:R R5
 U 1 1 626AFAC0
 P 2350 1550
-AR Path="/6269B018/626AFAC0" Ref="R?"  Part="1" 
-AR Path="/626BBE1D/626AFAC0" Ref="R?"  Part="1" 
-AR Path="/626C91A8/626AFAC0" Ref="R?"  Part="1" 
-F 0 "R?" V 2250 1550 50  0000 C CNN
+AR Path="/6269B018/626AFAC0" Ref="R5"  Part="1" 
+AR Path="/626BBE1D/626AFAC0" Ref="R10"  Part="1" 
+AR Path="/626C91A8/626AFAC0" Ref="R15"  Part="1" 
+F 0 "R5" V 2250 1550 50  0000 C CNN
 F 1 "22K" V 2350 1550 50  0000 C CNN
 F 2 "SquantorRcl:C_1206" V 2280 1550 50  0001 C CNN
 F 3 "~" H 2350 1550 50  0001 C CNN
