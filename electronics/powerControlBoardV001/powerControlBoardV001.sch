@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -59,7 +59,7 @@ F 3 "~" H 900 1050 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Label 1150 950  0    50   ~ 0
-Line_in
+L_in
 $Comp
 L power:Earth #PWR0101
 U 1 1 608C35AD
@@ -72,7 +72,7 @@ F 3 "~" H 1150 1050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 1150 1150 0    50   ~ 0
-Neutral
+N_in
 Wire Wire Line
 	1150 1150 1100 1150
 Wire Wire Line
@@ -161,38 +161,21 @@ Wire Notes Line
 Wire Notes Line
 	1500 7550 2200 7550
 $Sheet
-S 1900 700  900  750 
-U 608D141D
-F0 "grid filtering" 50
-F1 "grid_filter.sch" 50
-F2 "Earth" I L 1900 1050 50 
-F3 "Line_in" I L 1900 950 50 
-F4 "Neutral" I L 1900 1150 50 
-F5 "Line_out" O R 2800 950 50 
+S 1900 1800 850  800 
+U 62698700
+F0 "Sheet626986FF" 50
+F1 "LV_input.sch" 50
 $EndSheet
-Text Label 1850 950  2    50   ~ 0
-Line_in
-$Comp
-L power:Earth #PWR0103
-U 1 1 608D1F86
-P 1850 1050
-F 0 "#PWR0103" H 1850 800 50  0001 C CNN
-F 1 "Earth" H 1850 900 50  0001 C CNN
-F 2 "" H 1850 1050 50  0001 C CNN
-F 3 "~" H 1850 1050 50  0001 C CNN
-	1    1850 1050
-	0    1    1    0   
-$EndComp
-Text Label 1850 1150 2    50   ~ 0
-Neutral
-Wire Wire Line
-	1850 1150 1900 1150
-Wire Wire Line
-	1900 1050 1850 1050
-Wire Wire Line
-	1850 950  1900 950 
-Text Label 2850 950  0    50   ~ 0
-Line_out
-Wire Wire Line
-	2850 950  2800 950 
+$Sheet
+S 1900 2800 850  800 
+U 62698826
+F0 "Sheet62698825" 50
+F1 "HV_PSU.sch" 50
+$EndSheet
+$Sheet
+S 1900 800  850  800 
+U 62699DAE
+F0 "Sheet62699DAD" 50
+F1 "safety_relay.sch" 50
+$EndSheet
 $EndSCHEMATC
