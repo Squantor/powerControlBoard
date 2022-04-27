@@ -172,6 +172,11 @@ S 1900 2800 850  800
 U 62698826
 F0 "Sheet62698825" 50
 F1 "HV_PSU.sch" 50
+F2 "L_in" I L 1900 2950 50 
+F3 "Earth" I L 1900 3050 50 
+F4 "N_in" I L 1900 3150 50 
+F5 "VDD" O R 2750 2950 50 
+F6 "VSS" O R 2750 3150 50 
 $EndSheet
 $Sheet
 S 1900 800  850  800 
@@ -250,4 +255,35 @@ Wire Wire Line
 	2800 1950 2750 1950
 Wire Wire Line
 	2750 2150 2800 2150
+Text Label 2800 2950 0    50   ~ 0
+VDD
+Text Label 2800 3150 0    50   ~ 0
+VSS
+Wire Wire Line
+	2800 2950 2750 2950
+Wire Wire Line
+	2800 3150 2750 3150
+Wire Wire Line
+	1900 2950 1700 2950
+Wire Wire Line
+	1700 2950 1700 1950
+Connection ~ 1700 1950
+Wire Wire Line
+	1600 2150 1600 3150
+Wire Wire Line
+	1600 3150 1900 3150
+Connection ~ 1600 2150
+$Comp
+L power:Earth #PWR?
+U 1 1 626A2DE8
+P 1850 3050
+F 0 "#PWR?" H 1850 2800 50  0001 C CNN
+F 1 "Earth" H 1850 2900 50  0001 C CNN
+F 2 "" H 1850 3050 50  0001 C CNN
+F 3 "~" H 1850 3050 50  0001 C CNN
+	1    1850 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 3050 1900 3050
 $EndSCHEMATC
