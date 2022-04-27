@@ -161,6 +161,11 @@ S 1900 1800 850  800
 U 62698700
 F0 "Sheet626986FF" 50
 F1 "LV_input.sch" 50
+F2 "L_in" I L 1900 1950 50 
+F3 "Earth" I L 1900 2050 50 
+F4 "N_in" I L 1900 2150 50 
+F5 "VDD" O R 2750 1950 50 
+F6 "VSS" O R 2750 2150 50 
 $EndSheet
 $Sheet
 S 1900 2800 850  800 
@@ -194,9 +199,9 @@ Wire Wire Line
 Wire Wire Line
 	2800 1150 2750 1150
 Wire Wire Line
-	1100 950  1900 950 
+	1100 950  1700 950 
 Wire Wire Line
-	1100 1150 1900 1150
+	1100 1150 1600 1150
 $Comp
 L power:Earth #PWR?
 U 1 1 6269C2DE
@@ -210,4 +215,39 @@ F 3 "~" H 1850 1050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1850 1050 1900 1050
+Wire Wire Line
+	1700 950  1700 1950
+Wire Wire Line
+	1700 1950 1900 1950
+Connection ~ 1700 950 
+Wire Wire Line
+	1700 950  1900 950 
+Wire Wire Line
+	1600 1150 1600 2150
+Wire Wire Line
+	1600 2150 1900 2150
+Connection ~ 1600 1150
+Wire Wire Line
+	1600 1150 1900 1150
+$Comp
+L power:Earth #PWR?
+U 1 1 6269EE38
+P 1850 2050
+F 0 "#PWR?" H 1850 1800 50  0001 C CNN
+F 1 "Earth" H 1850 1900 50  0001 C CNN
+F 2 "" H 1850 2050 50  0001 C CNN
+F 3 "~" H 1850 2050 50  0001 C CNN
+	1    1850 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 2050 1900 2050
+Text Label 2800 1950 0    50   ~ 0
+VDD
+Text Label 2800 2150 0    50   ~ 0
+VSS
+Wire Wire Line
+	2800 1950 2750 1950
+Wire Wire Line
+	2750 2150 2800 2150
 $EndSCHEMATC

@@ -23,4 +23,6 @@ Text HLabel 2250 1150 2    50   Output ~ 0
 N_out
 Text HLabel 1000 1050 0    50   Input ~ 0
 Earth
+Text Notes 750  1500 0    50   ~ 0
+TODO: Add relay, relay driver, relay status LED
 $EndSCHEMATC
