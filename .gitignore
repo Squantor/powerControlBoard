@@ -42,3 +42,4 @@ doxyOutput/
 *.tmp
 *.bak
 _autosave*
+fp-info-cache
