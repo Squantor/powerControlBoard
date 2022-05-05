@@ -1586,6 +1586,9 @@
     (path "/00000000-0000-0000-0000-0000626c91a8/00000000-0000-0000-0000-000062742698"
       (reference "C6") (unit 1) (value "10u") (footprint "SquantorRcl:C_0805")
     )
+    (path "/00000000-0000-0000-0000-000062698826/d73fa900-a60a-4e94-9a1a-764b631278b4"
+      (reference "C7") (unit 1) (value "220u") (footprint "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm")
+    )
     (path "/00000000-0000-0000-0000-00006269b018/00000000-0000-0000-0000-0000626a9706"
       (reference "D1") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_MiniMELF")
     )
@@ -1792,6 +1795,9 @@
     )
     (path "/00000000-0000-0000-0000-0000626c91a8/00000000-0000-0000-0000-000062748e0c"
       (reference "U3") (unit 1) (value "4N28") (footprint "Package_DIP:DIP-6_W7.62mm")
+    )
+    (path "/00000000-0000-0000-0000-000062698826/7ac6c4bf-1be8-480e-a94c-cde28a1285fb"
+      (reference "U4") (unit 1) (value "HLK-5M12") (footprint "SquantorHi-link:5MXX_series")
     )
   )
 )
