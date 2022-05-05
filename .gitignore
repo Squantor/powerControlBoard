@@ -43,3 +43,6 @@ doxyOutput/
 *.bak
 _autosave*
 fp-info-cache
+
+# kicad 6 temporaries
+*-backups/
