@@ -44,5 +44,6 @@ doxyOutput/
 _autosave*
 fp-info-cache
 
-# kicad 6 temporaries
+# kicad 6 temporaries and local settings
 *-backups/
+*.kicad_prl
