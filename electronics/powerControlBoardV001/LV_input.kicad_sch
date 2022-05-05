@@ -1,0 +1,55 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 0e8f7fc0-2ef2-4b90-9c15-8a3a601ee459)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (wire (pts (xy 45.72 22.86) (xy 46.99 22.86))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid be645d0f-8568-47a0-a152-e3ddd33563eb)
+  )
+  (wire (pts (xy 45.72 17.78) (xy 46.99 17.78))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid ebd06df3-d52b-4cff-99a2-a771df6d3733)
+  )
+
+  (text "TODO: Fullbridge rectifier and smoothing capacitor"
+    (at 17.78 33.02 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid bd9595a1-04f3-4fda-8f1b-e65ad874edd3)
+  )
+
+  (label "VSS" (at 45.72 22.86 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid c9667181-b3c7-4b01-b8b4-baa29a9aea63)
+  )
+  (label "VDD" (at 45.72 17.78 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid d5b800ca-1ab6-4b66-b5f7-2dda5658b504)
+  )
+
+  (hierarchical_label "Earth" (shape input) (at 20.32 20.32 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 0ce8d3ab-2662-4158-8a2a-18b782908fc5)
+  )
+  (hierarchical_label "N_in" (shape input) (at 20.32 22.86 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 29195ea4-8218-44a1-b4bf-466bee0082e4)
+  )
+  (hierarchical_label "L_in" (shape input) (at 20.32 17.78 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid b0906e10-2fbc-4309-a8b4-6fc4cd1a5490)
+  )
+  (hierarchical_label "VSS" (shape output) (at 46.99 22.86 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid cff34251-839c-4da9-a0ad-85d0fc4e32af)
+  )
+  (hierarchical_label "VDD" (shape output) (at 46.99 17.78 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid d0fb0864-e79b-4bdc-8e8e-eed0cabe6d56)
+  )
+)

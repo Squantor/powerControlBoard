@@ -1,0 +1,31 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 35ef9c4a-35f6-467b-a704-b1d9354880cf)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (hierarchical_label "PWM_in" (shape input) (at 43.18 19.05 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 0ceb97d6-1b0f-4b71-921e-b0955c30c998)
+  )
+  (hierarchical_label "Tacho_out" (shape output) (at 43.18 24.13 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 1241b7f2-e266-4f5c-8a97-9f0f9d0eef37)
+  )
+  (hierarchical_label "VDD_Tacho" (shape input) (at 43.18 21.59 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 7d0dab95-9e7a-486e-a1d7-fc48860fd57d)
+  )
+  (hierarchical_label "VSS_in" (shape input) (at 21.59 24.13 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid a7f25f41-0b4c-4430-b6cd-b2160b2db099)
+  )
+  (hierarchical_label "VDD_in" (shape input) (at 21.59 19.05 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid b8b961e9-8a60-45fc-999a-a7a3baff4e0d)
+  )
+)

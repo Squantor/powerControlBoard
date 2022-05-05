@@ -1,0 +1,31 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 008da5b9-6f95-4113-b7d0-d93ac62efd33)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (hierarchical_label "N_out" (shape output) (at 36.83 21.59 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 0fafc6b9-fd35-4a55-9270-7a8e7ce3cb13)
+  )
+  (hierarchical_label "L_out" (shape output) (at 36.83 16.51 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 27b2eb82-662b-42d8-90e6-830fec4bb8d2)
+  )
+  (hierarchical_label "L_in" (shape input) (at 20.32 16.51 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 5d3d7893-1d11-4f1d-9052-85cf0e07d281)
+  )
+  (hierarchical_label "Earth" (shape input) (at 20.32 19.05 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 79476267-290e-445f-995b-0afd0e11a4b5)
+  )
+  (hierarchical_label "N_in" (shape input) (at 20.32 21.59 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 8b290a17-6328-4178-9131-29524d345539)
+  )
+)
