@@ -379,7 +379,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "jlcpcb_2_layer.kicad_pro",
+    "filename": "AcPowerControlBoard.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -514,6 +514,18 @@
     [
       "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55",
       ""
+    ],
+    [
+      "68b55295-fe67-43f3-942f-ec08960df788",
+      "safety relay"
+    ],
+    [
+      "3bbb2b99-26d8-4678-9159-4d4b165a9c73",
+      "LV supply"
+    ],
+    [
+      "809c4999-0d56-4a1e-b5d7-ff969fd0b582",
+      "Negative supply"
     ]
   ],
   "text_variables": {}
